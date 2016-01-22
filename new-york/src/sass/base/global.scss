@@ -1,0 +1,115 @@
+
+/* =====================
+   Global Rules
+   ===================*/
+
+
+/* Normalize Margins
+   ========================================================================== */
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+p,
+pre {
+  margin: 1em 0 0 0;
+}
+
+p { margin-top: 1.5em; }
+
+
+/* Box-Sizing
+   ========================================================================== */
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+
+
+
+
+/* BrowseHappy
+   ========================================================================== */
+.browsehappy {
+  margin: 0;
+  padding: $l-space;
+  background: $gold;
+  color: $copy-on-light;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.browsehappy a{
+  text-decoration: underline;
+}
+
+
+
+
+/* Selected text
+   ========================================================================== */
+::selection {
+  background: $gray;
+  color: $white;
+  text-shadow: none;
+}
+
+
+
+/* html
+   ========================================================================== */
+html { 
+  color: $white;
+  background-color: $black;
+  height: 100%;
+  min-height: 100%;
+}
+
+
+
+/* Body
+   ========================================================================== */
+body { 
+  background-color: $black;
+  height: 100%;
+  min-height: 100%;
+}
+
+
+
+
+/* Content Wrapper
+   ========================================================================== */
+.content-wrapper { background-color: $black; }
+
+
+
+/* Images
+   ========================================================================== */
+img { 
+  vertical-align: middle;
+  max-width: 100%;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+/* Full Height
+   ========================================================================== */
+.full-height {
+  height: 100%;
+  min-height: 100%;
+}
+

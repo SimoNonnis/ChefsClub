@@ -1,0 +1,119 @@
+
+/* ==========================================================================
+   Booking Engine Form
+   ========================================================================== */
+
+
+
+
+
+
+/* Overriding OpenTable style
+   ========================================================================== */
+#OT_searchWrapperAll {
+	text-align: left;
+	color: $copy-on-light;
+	margin-top: $m-space!important;
+}
+
+#OT_searchWrapperAll, 
+#OT_searchWrapperAll *, 
+#OT_searchWrapperAll *:before, 
+#OT_searchWrapperAll *:after {
+	box-sizing: content-box;
+}
+
+#dateDisplay, .OT_feedTitle {
+	width: auto !important;
+	display: none !important;
+}
+
+#OT_defList dt {
+	text-align: left;
+	width: auto;
+	position: static;
+	padding: 0;
+	margin: 0;
+
+	color: $copy-on-light;
+	font-family: 'Graphik-Light';
+	line-height: 22px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	@include font-size(1.1);
+}
+
+#OT_defList dd {
+	position: static !important;
+}
+
+#OT_searchWrapperAll input[type="text"], 
+#OT_searchWrapperAll select, 
+#OT_searchWrapperAll option {
+	width: 250px !important;
+	box-sizing: border-box !important;
+	margin: 0 0 12px !important;
+	line-height: 2;
+	height: 40px;
+	background: $gold;
+	padding: 7px;
+	border: 1px solid $border-on-light;
+	border-radius: 0;
+	-webkit-appearance: none;
+
+	font-family: 'Graphik-Light';
+	letter-spacing: 2px;
+}
+
+#OT_searchWrapperAll #OT_submitWrap {
+	position: relative !important;
+	display: inline-block;
+	margin: 0;
+	width: 188px;
+	top: 0;
+	left: 0;
+	margin-top: 12px;
+}
+
+.btn--new-submit {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+
+	box-sizing: border-box;
+	text-align: center;
+	cursor: pointer;
+	z-index: 1;
+	display: block;
+	text-transform: uppercase;
+	word-spacing: .3em;
+	padding: .5em 1.2em .3em;
+	background-color: $gold;
+	color: $copy-on-light;
+	border-radius: 0;
+	border: 1px solid $border-on-light;
+
+	transition: .25s ease-out;
+}
+
+.btn--new-submit:hover { color: $white; }
+
+
+
+/* Pop Up Window rendering below in the viewport -- Fix --
+   ========================================================================== */
+#TB_window {
+top: 4% !important;
+}
+
+
+
+/* Hide New iframe from openTable breaking layout
+   ========================================================================== */
+#cal1Shim {
+display: none !important;
+}
+
+
+

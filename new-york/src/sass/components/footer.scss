@@ -1,0 +1,27 @@
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+
+.footer {
+	color: $gray;
+	background-color: $black;
+	border-top: 1px solid $l-gray;
+	padding: 2em 3em;
+}
+
+
+@include min-screen(40.625em) {
+	.footer-nav {
+		width: 50%;
+		float: left;
+	}
+	.ignite-credit {
+		width: 50%;
+		float: right;
+		margin-top: 0;
+		text-align: right;
+	}
+}
+

@@ -1,0 +1,58 @@
+
+/* ==========================================================================
+   Chefs Slider
+   ========================================================================== */
+
+
+
+/* Customizing Flexslider Default Style visible on _flexslider.scss
+   ========================================================================== */
+.flexslider .slides img {
+	width: auto; 
+	display: inline-block;
+	margin-left: .1em;
+}
+
+.flexslider {
+	margin: 0;
+	border: none;
+	box-shadow: none;
+	background: none;
+	border-radius: 0;
+}
+
+.flex-direction-nav a { display: none; }
+
+.flex-control-nav { text-align: left; }
+
+
+
+
+
+/* Start Style 
+   ========================================================================== */
+.chefs-slider__main-title { margin-bottom: 2%; }
+
+.chefs-slider__avatar { border-radius: 50%; }
+
+.chefs-slider__title {
+	width: 72%;
+	vertical-align: middle;
+	display: inline-block;
+	padding-left: 2%;
+}
+
+@include min-screen(19.6875em) {
+	.chefs-slider__title { margin-top: 0; }	
+}
+
+//bullets
+.flex-control-paging li a { 
+	background: none;
+	box-shadow: inset 0 0 3px #575041;
+	width: 15px;
+	height: 15px;   
+}
+
+.flex-control-paging li a.flex-active { background: #84734E; }
+

@@ -1,0 +1,393 @@
+
+/* ==========================================================================
+   Navigation + Logo + Contact Details + Social Links
+   ========================================================================== */
+.header {
+	background-color: $black;
+	border-bottom: 1px solid $l-gray;
+}
+
+
+
+.header-wrapper {
+	padding: $xl-space;
+	max-width: 800px;
+}
+
+
+
+
+
+@include min-screen(75em) {
+	.header {
+		position: absolute;
+		width: 20%;
+		min-height: 100%;
+		border-bottom: none;
+		border-right: 1px solid $l-gray;
+	}
+
+	.content-wrapper { margin-left: 20%; }
+
+	.header a:hover { color: $gold; }
+}
+
+@media only screen and (min-height: 44em) and (min-width: 75em) {
+	.header { position: fixed; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Navigation Menu
+   ========================================================================== */
+.main-nav {
+	display: none;
+}
+
+.nav-toggle-div {
+	color: $gray;
+	float: left;
+	width: 40%;
+}
+
+.nav-toggle__btn { 
+	cursor: pointer; 
+	border: 1px solid $m-gray;
+	display: inline-block;
+	line-height: 1.335;
+
+	//position: fixed;
+	//z-index: 2;
+}
+
+.RespNav-Open { padding: 0.3em .6em .1em; }
+
+@include screen(43.75em, 74.999em) {
+	.nav-toggle-div {
+		width: 12%;
+		margin-top: 2.6em;
+	}
+}
+
+.main-nav__ul .isActive { color: $gold; }
+
+
+	
+
+
+
+
+@include min-screen(75em) {
+	.main-nav { display: block; }
+	.nav-toggle-div { display: none; }
+	.main-nav { margin-top: $kk-space; }	
+}
+
+
+
+
+.main-nav__ul { color: $gray; }
+.main-nav__ul a {
+	display: block;
+	padding: $s-space $l-space; 
+}
+
+
+
+/* Responsive Modal Navigation
+   ========================================================================== */
+
+
+.RespNav-close {
+	padding: .2em .6em;
+	position: absolute;
+	left: 1.2em;
+	top: 1.2em;
+	cursor: pointer;
+	display: inline-block;
+
+	color: $gray;
+}
+
+@include screen(43.75em, 74.999em) {
+	.RespNav-close {
+		top: 2.6em;
+		left: 1.1em;	
+	}	
+}
+
+
+.Modal {
+	height: 200%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	position: fixed;
+	transition: .5s;
+	width: 100%;
+	z-index: -1;
+	background-color: $black;
+}
+
+.RespNav {
+	margin: auto;
+	min-height: 100%;
+	padding: $g-space $xl-space;
+	text-align: center;
+
+	max-width: 800px;
+}
+
+.js-modalIsVisible {
+	opacity: 1!important;
+	z-index: 999!important;;
+}
+
+
+
+@include min-screen(75em) {
+	.Modal { height: 0; }	
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Locations Dropdown
+   ========================================================================== */
+.location-select-div {
+	width: 60%;
+	float: right;
+	text-align: right;
+}
+
+
+@include screen(43.75em, 74.999em) {
+	.location-select-div {
+		float: left;
+		width: 37%;
+		margin-top: 2.6em;
+	}
+}
+
+@include min-screen(75em) {
+	.location-select-div { 
+		margin: 0 auto $xl-space; 
+		width: 90%;
+		float: none;
+		text-align: center;
+	}	
+}
+
+.select-wrapper {
+	border: 1px solid $m-gray;
+	height: 44px;
+	padding: .9em;
+	display: inline-block;
+	overflow: hidden;
+	width: 100%;
+	max-width: 20em;
+}
+
+.select-wrapper__select {
+	cursor: pointer;
+	border: none;
+	background: none;
+	outline: 0;
+	width: 100%;
+	color: $gray;
+	letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Logo
+   ========================================================================== */
+.logo-div-desktop { display: none; }
+
+.logo-div { 
+	float: left;
+	width: 45%;
+	margin-top: $l-space;	
+}
+
+.logo-svg {
+	width: 111px;
+	height: 125px;
+}
+
+
+@include screen(43.75em, 74.999em) {
+	.logo-div {
+		margin-top: 0;
+		width: 30%;
+		text-align: center;
+	}
+}
+
+
+@include min-screen(75em) {
+	.logo-div { display: none; }
+	.logo-div-desktop { display: block; }
+
+	.logo-svg-desktop {
+		width: 141px;
+		height: 155px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact Details
+   ========================================================================== */
+.contact-details-social-div { color: $gray; }
+.social-links { display: none; }
+
+.tel-read-only { display: none; } 
+.btn--tel-active { padding-right: 0; }
+
+
+
+.contact-details-social-div { 
+	width: 55%;
+	float: right;
+	text-align: right;
+	margin-top: 3.2em;
+}
+
+@include max-screen(23.5625em) {
+	.contact-details-social-div { margin-top: 1.8em; }	
+}
+
+
+@include screen(43.75em, 74.999em) {
+	.contact-details-social-div {
+		width: 21%;
+		margin-top: .6em;
+		float: left;
+	}
+
+
+}
+
+
+.RespNav-SocialNav {
+	clear: both;
+	color: $gray;
+	padding-top: $xl-space;
+}	
+
+
+
+.social-links__a {
+	margin: 0 $s-space; 
+	padding: $m-space; 
+	display: inline-block;
+	border-radius: 50%;
+	border: 1px solid $m-gray;
+}
+
+/*.social-links__a*/.icon-facebook { padding: .99em 1.2em; }
+
+
+
+@include min-screen(75em) {
+
+	.social-links__a { 
+		margin: 0 0.2em; 
+		padding: 0.75em; 
+	}
+	/*.social-links__a*/.icon-facebook { padding: .75em 1em; }
+	/*.social-links__a*/.icon-facebook { margin-left: 0; }
+	/*.social-links__a*/.icon-google { margin-right: 0; }
+
+	.social-links a:hover {
+		color: $black;
+		background-color: $white;
+		border-color: $white;
+	}	
+}
+
+
+
+
+
+
+
+@include min-screen(68.75em) {
+	.tel-active { display: none; }
+	.tel-read-only { display: inline-block; }	
+}
+
+@include screen(43.75em, 74.999em) {
+	.tel-read-only { padding-right: 0; }	
+}
+
+@include min-screen(75em) {
+	.contact-details-social-div { 
+		margin-top: 4em; 
+		text-align: center;
+		width: 100%;
+		float: none;
+	}	
+
+	.social-links { 
+		margin-top: $l-space; 
+		display: block;
+	}
+}
+
+
+@include min-screen(87.5em) {
+	.social-links__a { margin: 0 $s-space; }	
+}
+
+
+

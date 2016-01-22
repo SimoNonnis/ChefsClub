@@ -1,0 +1,2067 @@
+/* ==========================================================================
+   The Brain File
+   ========================================================================== */
+/* Core
+   ========================================================================== */
+/* ==========================================================================
+   Variables Section
+   ========================================================================== */
+/* Colors
+   ========================================================================== */
+/* Max width
+   ========================================================================== */
+/* Space for Margin/Padding
+   ========================================================================== */
+/* ==========================================================================
+   Mixins
+   ========================================================================== */
+/* Rem/px for fonts
+   ========================================================================== */
+/* Media Querie for min-width
+   ========================================================================== */
+/* Media Querie for max-width
+   ========================================================================== */
+/* Base
+   ========================================================================== */
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio, canvas, progress, video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden], template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active, a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b, strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button, input, optgroup, select, textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button, select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td, th {
+  padding: 0; }
+
+/* =====================
+   Global Rules
+   ===================*/
+/* Normalize Margins
+   ========================================================================== */
+blockquote, dl, dd, h1, h2, h3, h4, h5, h6, figure, p, pre {
+  margin: 1em 0 0 0; }
+
+p {
+  margin-top: 1.5em; }
+
+/* Box-Sizing
+   ========================================================================== */
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* BrowseHappy
+   ========================================================================== */
+.browsehappy {
+  margin: 0;
+  padding: 1.5em;
+  background: #C7AD73;
+  color: #55534C;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+.browsehappy a {
+  text-decoration: underline; }
+
+/* Selected text
+   ========================================================================== */
+::-moz-selection {
+  background: #B0AEAE;
+  color: #fff;
+  text-shadow: none; }
+::selection {
+  background: #B0AEAE;
+  color: #fff;
+  text-shadow: none; }
+
+/* html
+   ========================================================================== */
+html {
+  color: #fff;
+  background-color: #231F20;
+  height: 100%;
+  min-height: 100%; }
+
+/* Body
+   ========================================================================== */
+body {
+  background-color: #231F20;
+  height: 100%;
+  min-height: 100%; }
+
+/* Content Wrapper
+   ========================================================================== */
+.content-wrapper {
+  background-color: #231F20; }
+
+/* Images
+   ========================================================================== */
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  display: inline-block; }
+
+/* Full Height
+   ========================================================================== */
+.full-height {
+  height: 100%;
+  min-height: 100%; }
+
+/* ==========================================================================
+   Typo
+   ========================================================================== */
+/* Sets up that Base 10 stuff  1rem = 10px
+   ========================================================================== */
+html {
+  font-size: 62.5%;
+  line-height: 22px;
+  -webkit-font-feature-settings: "liga", "dlig";
+     -moz-font-feature-settings: "liga", "dlig";
+          font-feature-settings: "liga", "dlig"; }
+
+/* Font Face
+   ========================================================================== */
+@font-face {
+  font-family: 'Graphik-Light';
+  src: url('../x-fonts/Graphik-Light/Graphik-Light.eot?#iefix') format('embedded-opentype'), url('../x-fonts/Graphik-Light/Graphik-Light.otf') format('opentype'), url('../x-fonts/Graphik-Light/Graphik-Light.woff') format('woff'), url('../x-fonts/Graphik-Light/Graphik-Light.ttf') format('truetype'), url('../x-fonts/Graphik-Light/Graphik-Light.svg#Graphik-Light') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Graphik-LightItalic';
+  src: url('../x-fonts/Graphik-LightItalic/Graphik-LightItalic.eot?#iefix') format('embedded-opentype'), url('../x-fonts/Graphik-LightItalic/Graphik-LightItalic.otf') format('opentype'), url('../x-fonts/Graphik-LightItalic/Graphik-LightItalic.woff') format('woff'), url('../x-fonts/Graphik-LightItalic/Graphik-LightItalic.ttf') format('truetype'), url('../x-fonts/Graphik-LightItalic/Graphik-LightItalic.svg#Graphik-LightItalic') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Graphik-Medium';
+  src: url('../x-fonts/Graphik-Medium/Graphik-Medium.eot?#iefix') format('embedded-opentype'), url('../x-fonts/Graphik-Medium/Graphik-Medium.otf') format('opentype'), url('../x-fonts/Graphik-Medium/Graphik-Medium.woff') format('woff'), url('../x-fonts/Graphik-Medium/Graphik-Medium.ttf') format('truetype'), url('../x-fonts/Graphik-Medium/Graphik-Medium.svg#Graphik-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'kings_caslonitalic';
+  src: url('../x-fonts/KingsCaslon/kingscaslon_std_it-webfont.eot');
+  src: url('../x-fonts/KingsCaslon/kingscaslon_std_it-webfont.eot?#iefix') format('embedded-opentype'), url('../x-fonts/KingsCaslon/kingscaslon_std_it-webfont.woff2') format('woff2'), url('../x-fonts/KingsCaslon/kingscaslon_std_it-webfont.woff') format('woff'), url('../x-fonts/KingsCaslon/kingscaslon_std_it-webfont.ttf') format('truetype'), url('../x-fonts/KingsCaslon/kingscaslon_std_it-webfont.svg#kings_caslonitalic') format('svg');
+  font-weight: normal; }
+
+/* Font-Family and others
+   ========================================================================== */
+body {
+  font-family: 'Graphik-Light', arial, sans-serif;
+  color: #55534C;
+  letter-spacing: 1px; }
+
+.page-intro {
+  font-family: 'Graphik-Light';
+  color: #fff;
+  line-height: 24px; }
+
+.page-intro h1 {
+  font-family: 'Graphik-Light';
+  line-height: 30px;
+  letter-spacing: 4px;
+  font-weight: normal; }
+
+.accent {
+  font-family: 'kings_caslonitalic';
+  color: #C7AD73;
+  letter-spacing: .5px;
+  line-height: 20px;
+  margin-top: .5em; }
+
+.btn--boxes {
+  font-family: 'Graphik-Light';
+  line-height: 13px;
+  letter-spacing: 2px; }
+
+.magicBox--gold {
+  color: #55534C; }
+
+.magicBox--gold h2, .magicBox--black h2 {
+  font-family: 'Graphik-Light';
+  color: #fff;
+  line-height: 22px;
+  letter-spacing: 3px;
+  font-weight: normal; }
+
+.magicBox--gold a {
+  font-family: 'Graphik-Light', sans-serif; }
+
+.magicBox--gold a:hover, .magicBox--gold a:focus {
+  color: #fff; }
+
+/*.buttonGroup*/
+.gold .button__a, .dark .button__a {
+  font-family: 'Graphik-Light';
+  line-height: 18px;
+  letter-spacing: 2px; }
+
+.gold .button__pdf {
+  color: #83775C; }
+
+.magicBox--black {
+  color: #999; }
+
+/*.buttonGroup*/
+.dark .button__map {
+  color: #666; }
+
+.dark-stripe {
+  color: #fff;
+  line-height: 26px;
+  letter-spacing: 1px; }
+
+.dark-stripe h3 {
+  font-family: 'Graphik-Light';
+  line-height: 13px;
+  letter-spacing: 2px;
+  font-weight: normal; }
+
+.contact-email a {
+  font-family: 'Graphik-Medium', sans-serif; }
+
+.contact-email a:hover {
+  color: #fff; }
+
+.footer a {
+  font-family: 'Graphik-Medium', sans-serif; }
+
+.footer a:hover {
+  color: #fff; }
+
+.btn--tel-active {
+  font-family: 'Graphik-Medium', sans-serif; }
+
+.chefs-slider__now {
+  font-family: 'Graphik-Medium', sans-serif;
+  letter-spacing: 1px;
+  font-weight: normal; }
+
+.footer-nav a {
+  font-family: 'Graphik-light', sans-serif;
+  letter-spacing: 2px; }
+
+.opening-hours {
+  font-family: 'kings_caslonitalic';
+  color: #C7AD73;
+  letter-spacing: 1.2px; }
+
+/* Menu Nav
+   ========================================================================== */
+.main-nav__ul a {
+  font-family: 'Graphik-Light';
+  color: #FFFFFF;
+  letter-spacing: 2px; }
+
+/* Contact
+   ========================================================================== */
+.mobile-telephone-div, .contact-details {
+  font-family: 'Graphik-Light';
+  color: #999;
+  line-height: 16px;
+  letter-spacing: 2px; }
+
+/* Chfs Slider
+   ========================================================================== */
+.chefs-slider__title {
+  font-family: 'Graphik-Light';
+  line-height: 22px;
+  letter-spacing: 3px; }
+
+/* Font-Size
+   ========================================================================== */
+body {
+  font-size: 14px;
+  font-size: 1.4rem; }
+
+.page-intro {
+  font-size: 18px;
+  font-size: 1.8rem; }
+
+.page-intro h1 {
+  font-size: 28px;
+  font-size: 2.8rem; }
+
+.accent {
+  font-size: 16px;
+  font-size: 1.6rem; }
+
+.btn--boxes {
+  font-size: 12px;
+  font-size: 1.2rem; }
+
+.magicBox--gold h2, .magicBox--black h2 {
+  font-size: 18px;
+  font-size: 1.8rem; }
+
+/*.buttonGroup*/
+.gold .button__a, .dark .button__a {
+  font-size: 13px;
+  font-size: 1.3rem; }
+
+/*.buttonGroup*/
+.gold .button__pdf, .dark .button__map {
+  font-size: 11px;
+  font-size: 1.1rem; }
+
+.dark-stripe {
+  font-size: 18px;
+  font-size: 1.8rem; }
+
+.dark-stripe h3 {
+  font-size: 12px;
+  font-size: 1.2rem; }
+
+.dark-stripe__span {
+  font-size: 14px;
+  font-size: 1.4rem; }
+
+.small-promo h2 {
+  font-size: 15px;
+  font-size: 1.5rem; }
+
+.main-nav__ul {
+  font-size: 12px;
+  font-size: 1.2rem; }
+
+.RespNav-Open, .RespNav-close {
+  font-size: 24px;
+  font-size: 2.4rem; }
+
+.select-wrapper {
+  font-size: 11px;
+  font-size: 1.1rem; }
+
+.contact-details {
+  font-size: 11px;
+  font-size: 1.1rem; }
+
+.mobile-telephone-div {
+  font-size: 14px;
+  font-size: 1.4rem; }
+
+.social-links, .RespNav-SocialNav {
+  font-size: 12px;
+  font-size: 1.2rem; }
+
+.footer {
+  font-size: 11px;
+  font-size: 1.1rem; }
+
+.chefs-slider__title {
+  font-size: 13px;
+  font-size: 1.3rem; }
+
+.contact-email {
+  font-size: 12px;
+  font-size: 1.2rem; }
+
+.browsehappy {
+  font-size: 16px;
+  font-size: 1.6rem; }
+
+/* A bit of responsiveness for smallest screens and start of 2 columns
+   ========================================================================== */
+@media screen and (max-width: 25em) {
+  .small-promo h2 {
+    font-size: 11px;
+    font-size: 1.1rem; }
+  .small-promo p {
+    font-size: 11px;
+    font-size: 1.1rem; }
+  .small-promo .btn--boxes {
+    font-size: 10px;
+    font-size: 1rem; }
+  .dark-stripe {
+    font-size: 12px;
+    font-size: 1.2rem; }
+  .dark-stripe__span {
+    font-size: 11px;
+    font-size: 1.1rem; } }
+
+@media screen and (min-width: 43.75em) and (max-width: 50em) {
+  .small-promo h2 {
+    font-size: 11px;
+    font-size: 1.1rem; }
+  .small-promo p {
+    font-size: 11px;
+    font-size: 1.1rem; }
+  .small-promo .btn--boxes {
+    font-size: 10px;
+    font-size: 1rem; }
+  .dark-stripe {
+    font-size: 12px;
+    font-size: 1.2rem; }
+  .dark-stripe__span {
+    font-size: 11px;
+    font-size: 1.1rem; } }
+
+/* Links
+   ========================================================================== */
+a {
+  text-decoration: none;
+  font-style: normal;
+  color: inherit;
+  transition: .25s ease-out; }
+
+a:hover, a:focus, a:active {
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+a:focus {
+  outline: none; }
+
+/* Utils
+   ========================================================================== */
+/* ==========================================================================
+   Helpers
+   ========================================================================== */
+/* Micro clearfix
+   ========================================================================== */
+.u-cf:before, .u-cf:after {
+  content: " ";
+  display: table; }
+
+.u-cf:after {
+  clear: both; }
+
+/* Clear Both
+   ========================================================================== */
+.cl-both {
+  clear: both; }
+
+/* ==========================================================================
+   Text Related
+   ========================================================================== */
+/* Hide only visually, but have it available for screen readers
+   ========================================================================== */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/* Text Align Left
+   ========================================================================== */
+.u-textLeft {
+  text-align: left; }
+
+/* Text Align Center
+   ========================================================================== */
+.u-textCenter {
+  text-align: center; }
+
+/* Text Align Right
+   ========================================================================== */
+.u-textRight {
+  text-align: right; }
+
+/* Text Uppercase
+   ========================================================================== */
+.u-textUpperCase {
+  text-transform: uppercase; }
+
+/* Text Capitalize
+   ========================================================================== */
+.u-textCapitalize {
+  text-transform: capitalize; }
+
+/* Text Italic
+   ========================================================================== */
+.u-textItalic {
+  font-style: italic; }
+
+/* Text Normal
+   ========================================================================== */
+.u-textNormal {
+  font-style: normal; }
+
+/* Inherit the ancestor's text color.
+   ========================================================================== */
+.u-textInheritColor {
+  color: inherit; }
+
+/* Break strings when their length exceeds the width of their container
+   ========================================================================== */
+.u-textBreak {
+  word-break: break-word; }
+
+/* truncate with an ellipsis
+   ========================================================================== */
+.u-textTruncate {
+  max-width: 100%;
+  /* 1 Ensure that the node has a maximum width after which truncation can occur */
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  word-wrap: normal !important;
+  /* 2 Fix for IE 8/9 if `word-wrap: break-word` is in effect on ancestor */ }
+
+/* Enables font kerning in all browsers.
+ * http://blog.typekit.com/2014/02/05/kerning-on-the-web/
+   ========================================================================== */
+.u-textKern {
+  text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: "kern" 1;
+     -moz-font-feature-settings: "kern" 1;
+          font-feature-settings: "kern" 1;
+  -webkit-font-kerning: normal;
+     -moz-font-kerning: normal;
+          font-kerning: normal; }
+
+/* ==========================================================================
+   Blocks
+   ========================================================================== */
+/* Display Block
+   ========================================================================== */
+.u-block {
+  display: block; }
+
+/* Display Inline-Block
+   ========================================================================== */
+.u-inlineBlock {
+  display: inline-block; }
+
+/* Display Table for Vertical Align
+   ========================================================================== */
+.u-displayTable {
+  display: table; }
+
+.u-displayTable > * {
+  display: table-cell;
+  vertical-align: middle; }
+
+/* Modern Alternative to Center Elements
+   ========================================================================== */
+.center-parent {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d; }
+
+.center-child {
+  display: block;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+/* Margin 0
+   ========================================================================== */
+.u-margin-t-flush {
+  margin-top: 0; }
+
+.u-margin-b-flush {
+  margin-bottom: 0; }
+
+.u-margin-lr-auto {
+  margin-left: auto;
+  margin-right: auto; }
+
+/* Padding Flush
+   ========================================================================== */
+.u-padding-b-flush {
+  padding-bottom: 0 !important; }
+
+/* Position
+   ========================================================================== */
+.u-position-rel {
+  position: relative; }
+
+/* Vertical Align
+   ========================================================================== */
+.u-valign-middle {
+  vertical-align: middle; }
+
+.u-valign-t {
+  vertical-align: top; }
+
+/* Clean lists (UL/OL) from padding, margin & styles
+   ========================================================================== */
+.u-clean-list {
+  margin: 0;
+  list-style: none;
+  padding: 0; }
+
+/* Plugins
+   ========================================================================== */
+@font-face {
+  font-family: 'icomoon';
+  src: url('../x-fonts/icomoon.eot?og8dw7');
+  src: url('../x-fonts/icomoon.eot?#iefixog8dw7') format('embedded-opentype'), url('../x-fonts/icomoon.woff?og8dw7') format('woff'), url('../x-fonts/icomoon.ttf?og8dw7') format('truetype'), url('../x-fonts/icomoon.svg?og8dw7#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-email:before {
+  content: "\e600"; }
+
+.icon-facebook:before {
+  content: "\e601"; }
+
+.icon-google:before {
+  content: "\e602"; }
+
+.icon-hamburger:before {
+  content: "\e603"; }
+
+.icon-instagram:before {
+  content: "\e604"; }
+
+.icon-map:before {
+  content: "\e605"; }
+
+.icon-pdf:before {
+  content: "\e606"; }
+
+.icon-twitter:before {
+  content: "\e607"; }
+
+.icon-video:before {
+  content: "\e608"; }
+
+/*
+ * jQuery FlexSlider v2.2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+/* Browser Resets
+*********************************/
+.flex-container a:active, .flexslider a:active, .flex-container a:focus, .flexslider a:focus {
+  outline: none; }
+
+.slides, .flex-control-nav, .flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/* Icon Fonts
+*********************************/
+/* Font-face Icons */
+@font-face {
+  font-family: 'flexslider-icon';
+  src: url('../x-fonts/flexslider/flexslider-icon.eot');
+  src: url('../x-fonts/flexslider/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('../x-fonts/flexslider/flexslider-icon.woff') format('woff'), url('../x-fonts/flexslider/flexslider-icon.ttf') format('truetype'), url('../x-fonts/flexslider/flexslider-icon.svg#flexslider-icon') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+/* FlexSlider Necessary Styles
+*********************************/
+.flexslider {
+  margin: 0;
+  padding: 0; }
+
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden; }
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {
+  width: 100%;
+  display: block; }
+
+.flex-pauseplay span {
+  text-transform: capitalize; }
+
+/* Clearfix for the .slides element */
+.slides:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+html[xmlns] .slides {
+  display: block; }
+
+* html .slides {
+  height: 1%; }
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {
+  display: block; }
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider {
+  margin: 0 0 60px;
+  background: #fff;
+  border: 4px solid #fff;
+  position: relative;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  zoom: 1; }
+
+.flex-viewport {
+  max-height: 2000px;
+  transition: all 1s ease; }
+
+.loading .flex-viewport {
+  max-height: 300px; }
+
+.flexslider .slides {
+  zoom: 1; }
+
+.carousel li {
+  margin-right: 5px; }
+
+/* Direction Nav */
+.flex-direction-nav {
+  *height: 0; }
+
+.flex-direction-nav a {
+  text-decoration: none;
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  overflow: hidden;
+  opacity: 0;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  transition: all .3s ease; }
+
+.flex-direction-nav .flex-prev {
+  left: -50px; }
+
+.flex-direction-nav .flex-next {
+  right: -50px;
+  text-align: right; }
+
+.flexslider:hover .flex-prev {
+  opacity: 0.7;
+  left: 10px; }
+
+.flexslider:hover .flex-next {
+  opacity: 0.7;
+  right: 10px; }
+
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
+  opacity: 1; }
+
+.flex-direction-nav .flex-disabled {
+  opacity: 0 !important;
+  filter: alpha(opacity=0);
+  cursor: default; }
+
+.flex-direction-nav a:before {
+  font-family: "flexslider-icon";
+  font-size: 40px;
+  line-height: 1;
+  display: inline-block;
+  content: '\f001'; }
+
+.flex-direction-nav a.flex-next:before {
+  content: '\f002'; }
+
+/* Pause/Play */
+.flex-pauseplay a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  opacity: 0.8;
+  z-index: 10;
+  overflow: hidden;
+  cursor: pointer;
+  color: #000; }
+
+.flex-pauseplay a:before {
+  font-family: "flexslider-icon";
+  font-size: 20px;
+  display: inline-block;
+  content: '\f004'; }
+
+.flex-pauseplay a:hover {
+  opacity: 1; }
+
+.flex-pauseplay a.flex-play:before {
+  content: '\f003'; }
+
+/* Control Nav */
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: -40px;
+  text-align: center; }
+
+.flex-control-nav li {
+  margin: 0 6px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline; }
+
+.flex-control-paging li a {
+  width: 11px;
+  height: 11px;
+  display: block;
+  background: #666;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  text-indent: -9999px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3); }
+
+.flex-control-paging li a:hover {
+  background: #333;
+  background: rgba(0, 0, 0, 0.7); }
+
+.flex-control-paging li a.flex-active {
+  background: #000;
+  background: rgba(0, 0, 0, 0.9);
+  cursor: default; }
+
+.flex-control-thumbs {
+  margin: 5px 0 0;
+  position: static;
+  overflow: hidden; }
+
+.flex-control-thumbs li {
+  width: 25%;
+  float: left;
+  margin: 0; }
+
+.flex-control-thumbs img {
+  width: 100%;
+  display: block;
+  opacity: .7;
+  cursor: pointer; }
+
+.flex-control-thumbs img:hover {
+  opacity: 1; }
+
+.flex-control-thumbs .flex-active {
+  opacity: 1;
+  cursor: default; }
+
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 10px; }
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 10px; } }
+
+/* Components
+   ========================================================================== */
+/* ==========================================================================
+   Boxes system for every page
+   ========================================================================== */
+/* Magic Box
+   ========================================================================== */
+.magicBox {
+  padding-bottom: 42%;
+  position: relative;
+  overflow: hidden; }
+
+.magicBox--rect {
+  padding-bottom: 63%; }
+
+.magicBox--thin {
+  padding-bottom: 21.7%; }
+
+.magicBox > * {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+@media screen and (max-width: 43.74994em) {
+  .magicBox {
+    padding-bottom: 100%; }
+  .magicBox--rect {
+    padding-bottom: 150%; }
+  .magicBox--thin {
+    padding-bottom: 43%; } }
+
+.magicBox__black {
+  background-color: #231F20;
+  background-color: rgba(35, 31, 32, 0.7); }
+
+.magicBox--gold {
+  background-color: #C7AD73; }
+
+/* For mobile phones in smallest view -- Boxes with lot of content
+   ========================================================================== */
+@media screen and (max-width: 27.5em) {
+  .magicBox--s {
+    padding-bottom: 155%; }
+  .magicBox--m {
+    padding-bottom: 200%; }
+  .magicBox--thin-s {
+    padding-bottom: 56%; } }
+
+/* Just after the switch to 2 columns
+   ========================================================================== */
+@media screen and (min-width: 43.75em) and (max-width: 58.125em) {
+  .magicBox--xs {
+    padding-bottom: 60%; }
+  .magicBox--xm {
+    padding-bottom: 80%; }
+  .magicBox--thin-xs {
+    padding-bottom: 30%; } }
+
+/* Shift from 1 column to 2
+   ========================================================================== */
+@media screen and (min-width: 43.75em) {
+  .grid-element {
+    float: left;
+    width: 50%; } }
+
+/* Sub Elements inside one grid-element
+   ========================================================================== */
+.grid-element__cell {
+  float: left;
+  width: 50%; }
+
+.grid-element__cell--half {
+  height: 100%; }
+
+.grid-element__cell--cube {
+  height: 50%; }
+
+.grid-element__half {
+  height: 100%; }
+
+.grid-element__cube {
+  height: 50%; }
+
+.cell--cube--button {
+  position: relative; }
+
+.cell--cube--button > * {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+/* Hide images on One Column layout
+   ========================================================================== */
+@media screen and (max-width: 43.74em) {
+  .Hide-On-One-Column {
+    display: none; } }
+
+/* Cover class
+   ========================================================================== */
+.cover {
+  background-size: cover;
+  background-position: center; }
+
+/* A lot of Copy
+   ========================================================================== */
+.lotOfCopy {
+  padding: 5%; }
+
+.temporary-margin-top {
+  margin-top: 15%; }
+
+@media screen and (min-width: 62em) {
+  .lotOfCopy {
+    padding: 8%; } }
+
+@media screen and (min-width: 80em) {
+  .lotOfCopy {
+    padding: 10%; } }
+
+/* Dark Stripe
+   ========================================================================== */
+.dark-stripe {
+  padding: 9% 2%;
+  background-color: #231F20; }
+
+.dark-stripe h3 {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #fff; }
+
+.dark-stripe span {
+  display: block;
+  color: #C7AD73; }
+
+/* Email <p> on Reservation page inside Dark Contact box
+   ========================================================================== */
+.opening-hours {
+  margin-top: 2em; }
+
+.contact-email {
+  margin-top: 0; }
+
+/* Fancy Zoom
+   ========================================================================== */
+.fancy-zoom {
+  transition: .7s; }
+
+.fancy-zoom:hover {
+  -webkit-transform: scale(1.2) rotate(2deg);
+      -ms-transform: scale(1.2) rotate(2deg);
+          transform: scale(1.2) rotate(2deg); }
+
+/* Deep Effect
+   ========================================================================== */
+.deep-shadow {
+  box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.2); }
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+/* Button Creation Process
+   ========================================================================== */
+.btn {
+  padding: 1.2em 1.5em 1em;
+  display: inline-block; }
+
+.btn-border {
+  border: 1px solid #fff; }
+
+.btn-m-top {
+  margin-top: 2.5em; }
+
+.magicBox--gold .btn-border {
+  border-color: #A69267; }
+
+.magicBox--gold .btn--boxes:hover {
+  background-color: #BBA26C;
+  border-color: #99855D; }
+
+.page-intro .btn--boxes:hover {
+  color: #231F20;
+  background-color: #fff; }
+
+/* Small Promo in Home Page
+   ========================================================================== */
+.small-promo {
+  transition: .25s ease-out; }
+
+@media screen and (min-width: 75em) {
+  .small-promo:hover {
+    background-color: #231F20; }
+  .small-promo:hover h2 {
+    color: #C7AD73; }
+  .small-promo:hover .btn--boxes {
+    color: #fff;
+    border-color: #444;
+    background-color: #292627; } }
+
+/* Button Elements for Menus and Contact 
+   ========================================================================== */
+.buttonGroup {
+  margin-top: 3em; }
+
+.button__a {
+  display: block;
+  padding: 1em;
+  border-top: 1px solid; }
+
+@media screen and (min-width: 90.625em) {
+  .button__a {
+    padding: 2em 1em 1.75em; } }
+
+.button__a:last-child {
+  border-bottom: 1px solid; }
+
+.magicBox--gold .button__a {
+  border-color: #A69267; }
+
+.magicBox--black .button__a {
+  border-color: #333; }
+
+.magicBox--gold .button__a:hover {
+  color: #55534C;
+  background-color: #BBA26C; }
+
+.magicBox--gold .button__a:hover .button__pdf {
+  color: #fff; }
+
+.magicBox--black .button__a:hover {
+  background-color: #292627; }
+
+.magicBox--black .button__a:hover .button__map {
+  color: #fff; }
+
+.button__name {
+  display: block;
+  float: left;
+  width: 60%; }
+
+.button__pdf {
+  display: block;
+  width: 40%;
+  float: right; }
+
+.icon-pdf, .icon-map {
+  padding-left: .5em; }
+
+/* Reservations Page -- Telephone & Address
+   ========================================================================== */
+.contact-tel {
+  display: none; }
+
+@media screen and (min-width: 68.75em) {
+  .contact-active-tel {
+    display: none; }
+  .contact-tel {
+    display: block; } }
+
+.button__map {
+  display: block;
+  width: 40%;
+  float: right;
+  padding-top: 1.2em; }
+
+@media screen and (max-width: 25.625em) {
+  .button__address, .button__map {
+    width: 100%;
+    float: none; }
+  .button__map {
+    text-align: left; } }
+
+/* Gradient for Buttons Grid
+   ========================================================================== */
+.btns-gradient {
+  position: relative; }
+
+.btns-gradient:before, .btns-gradient:after {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  content: " ";
+  width: 1px;
+  height: 100%;
+  display: block;
+  background: #000000;
+  background: linear-gradient(to bottom, #000000 0%, #ffffff 50%, #000000 100%); }
+
+.btns-gradient:after {
+  left: auto;
+  right: 50%; }
+
+.btns-gradient-row {
+  display: table;
+  width: 100%;
+  position: relative; }
+
+.btns-gradient-row:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: " ";
+  height: 1px;
+  width: 100%;
+  display: block;
+  background: #000000;
+  background: linear-gradient(to right, #000000 0%, #ffffff 50%, #000000 100%); }
+
+.btns-gradient-row:first-child:after {
+  display: none; }
+
+.btns-gradient {
+  display: table-cell;
+  text-align: center;
+  height: 100px;
+  vertical-align: middle;
+  width: 50%; }
+
+/* ==========================================================================
+   Chefs Slider
+   ========================================================================== */
+/* Customizing Flexslider Default Style visible on _flexslider.scss
+   ========================================================================== */
+.flexslider .slides img {
+  width: auto;
+  display: inline-block;
+  margin-left: .1em; }
+
+.flexslider {
+  margin: 0;
+  border: none;
+  box-shadow: none;
+  background: none;
+  border-radius: 0; }
+
+.flex-direction-nav a {
+  display: none; }
+
+.flex-control-nav {
+  text-align: left; }
+
+/* Start Style 
+   ========================================================================== */
+.chefs-slider__main-title {
+  margin-bottom: 2%; }
+
+.chefs-slider__avatar {
+  border-radius: 50%; }
+
+.chefs-slider__title {
+  width: 72%;
+  vertical-align: middle;
+  display: inline-block;
+  padding-left: 2%; }
+
+@media screen and (min-width: 19.6875em) {
+  .chefs-slider__title {
+    margin-top: 0; } }
+
+.flex-control-paging li a {
+  background: none;
+  box-shadow: inset 0 0 3px #575041;
+  width: 15px;
+  height: 15px; }
+
+.flex-control-paging li a.flex-active {
+  background: #84734E; }
+
+/* ==========================================================================
+   Navigation + Logo + Contact Details + Social Links
+   ========================================================================== */
+.header {
+  background-color: #231F20;
+  border-bottom: 1px solid #333333; }
+
+.header-wrapper {
+  padding: 2em;
+  max-width: 800px; }
+
+@media screen and (min-width: 75em) {
+  .header {
+    position: absolute;
+    width: 20%;
+    min-height: 100%;
+    border-bottom: none;
+    border-right: 1px solid #333333; }
+  .content-wrapper {
+    margin-left: 20%; }
+  .header a:hover {
+    color: #C7AD73; } }
+
+@media only screen and (min-height: 44em) and (min-width: 75em) {
+  .header {
+    position: fixed; } }
+
+/* Navigation Menu
+   ========================================================================== */
+.main-nav {
+  display: none; }
+
+.nav-toggle-div {
+  color: #B0AEAE;
+  float: left;
+  width: 40%; }
+
+.nav-toggle__btn {
+  cursor: pointer;
+  border: 1px solid #444;
+  display: inline-block;
+  line-height: 1.335; }
+
+.RespNav-Open {
+  padding: 0.3em .6em .1em; }
+
+@media screen and (min-width: 43.75em) and (max-width: 74.999em) {
+  .nav-toggle-div {
+    width: 12%;
+    margin-top: 2.6em; } }
+
+.main-nav__ul .isActive {
+  color: #C7AD73; }
+
+@media screen and (min-width: 75em) {
+  .main-nav {
+    display: block; }
+  .nav-toggle-div {
+    display: none; }
+  .main-nav {
+    margin-top: 4em; } }
+
+.main-nav__ul {
+  color: #B0AEAE; }
+
+.main-nav__ul a {
+  display: block;
+  padding: 0.5em 1.5em; }
+
+/* Responsive Modal Navigation
+   ========================================================================== */
+.RespNav-close {
+  padding: .2em .6em;
+  position: absolute;
+  left: 1.2em;
+  top: 1.2em;
+  cursor: pointer;
+  display: inline-block;
+  color: #B0AEAE; }
+
+@media screen and (min-width: 43.75em) and (max-width: 74.999em) {
+  .RespNav-close {
+    top: 2.6em;
+    left: 1.1em; } }
+
+.Modal {
+  height: 200%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  transition: .5s;
+  width: 100%;
+  z-index: -1;
+  background-color: #231F20; }
+
+.RespNav {
+  margin: auto;
+  min-height: 100%;
+  padding: 6em 2em;
+  text-align: center;
+  max-width: 800px; }
+
+.js-modalIsVisible {
+  opacity: 1 !important;
+  z-index: 999 !important; }
+
+@media screen and (min-width: 75em) {
+  .Modal {
+    height: 0; } }
+
+/* Locations Dropdown
+   ========================================================================== */
+.location-select-div {
+  width: 60%;
+  float: right;
+  text-align: right; }
+
+@media screen and (min-width: 43.75em) and (max-width: 74.999em) {
+  .location-select-div {
+    float: left;
+    width: 37%;
+    margin-top: 2.6em; } }
+
+@media screen and (min-width: 75em) {
+  .location-select-div {
+    margin: 0 auto 2em;
+    width: 90%;
+    float: none;
+    text-align: center; } }
+
+.select-wrapper {
+  border: 1px solid #444;
+  height: 44px;
+  padding: .9em;
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+  max-width: 20em; }
+
+.select-wrapper__select {
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: 0;
+  width: 100%;
+  color: #B0AEAE;
+  letter-spacing: 2px; }
+
+/* Logo
+   ========================================================================== */
+.logo-div-desktop {
+  display: none; }
+
+.logo-div {
+  float: left;
+  width: 45%;
+  margin-top: 1.5em; }
+
+.logo-svg {
+  width: 111px;
+  height: 125px; }
+
+@media screen and (min-width: 43.75em) and (max-width: 74.999em) {
+  .logo-div {
+    margin-top: 0;
+    width: 30%;
+    text-align: center; } }
+
+@media screen and (min-width: 75em) {
+  .logo-div {
+    display: none; }
+  .logo-div-desktop {
+    display: block; }
+  .logo-svg-desktop {
+    width: 141px;
+    height: 155px; } }
+
+/* Contact Details
+   ========================================================================== */
+.contact-details-social-div {
+  color: #B0AEAE; }
+
+.social-links {
+  display: none; }
+
+.tel-read-only {
+  display: none; }
+
+.btn--tel-active {
+  padding-right: 0; }
+
+.contact-details-social-div {
+  width: 55%;
+  float: right;
+  text-align: right;
+  margin-top: 3.2em; }
+
+@media screen and (max-width: 23.5625em) {
+  .contact-details-social-div {
+    margin-top: 1.8em; } }
+
+@media screen and (min-width: 43.75em) and (max-width: 74.999em) {
+  .contact-details-social-div {
+    width: 21%;
+    margin-top: .6em;
+    float: left; } }
+
+.RespNav-SocialNav {
+  clear: both;
+  color: #B0AEAE;
+  padding-top: 2em; }
+
+.social-links__a {
+  margin: 0 0.5em;
+  padding: 1em;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #444; }
+
+/*.social-links__a*/
+.icon-facebook {
+  padding: .99em 1.2em; }
+
+@media screen and (min-width: 75em) {
+  .social-links__a {
+    margin: 0 0.2em;
+    padding: 0.75em; }
+  /*.social-links__a*/
+  .icon-facebook {
+    padding: .75em 1em; }
+  /*.social-links__a*/
+  .icon-facebook {
+    margin-left: 0; }
+  /*.social-links__a*/
+  .icon-google {
+    margin-right: 0; }
+  .social-links a:hover {
+    color: #231F20;
+    background-color: #fff;
+    border-color: #fff; } }
+
+@media screen and (min-width: 68.75em) {
+  .tel-active {
+    display: none; }
+  .tel-read-only {
+    display: inline-block; } }
+
+@media screen and (min-width: 43.75em) and (max-width: 74.999em) {
+  .tel-read-only {
+    padding-right: 0; } }
+
+@media screen and (min-width: 75em) {
+  .contact-details-social-div {
+    margin-top: 4em;
+    text-align: center;
+    width: 100%;
+    float: none; }
+  .social-links {
+    margin-top: 1.5em;
+    display: block; } }
+
+@media screen and (min-width: 87.5em) {
+  .social-links__a {
+    margin: 0 0.5em; } }
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.footer {
+  color: #B0AEAE;
+  background-color: #231F20;
+  border-top: 1px solid #333333;
+  padding: 2em 3em; }
+
+@media screen and (min-width: 40.625em) {
+  .footer-nav {
+    width: 50%;
+    float: left; }
+  .ignite-credit {
+    width: 50%;
+    float: right;
+    margin-top: 0;
+    text-align: right; } }
+
+/* ==========================================================================
+   Booking Engine Form
+   ========================================================================== */
+/* Overriding OpenTable style
+   ========================================================================== */
+#OT_searchWrapperAll {
+  text-align: left;
+  color: #55534C;
+  margin-top: 1em !important; }
+
+#OT_searchWrapperAll, #OT_searchWrapperAll *, #OT_searchWrapperAll *:before, #OT_searchWrapperAll *:after {
+  box-sizing: content-box; }
+
+#dateDisplay, .OT_feedTitle {
+  width: auto !important;
+  display: none !important; }
+
+#OT_defList dt {
+  text-align: left;
+  width: auto;
+  position: static;
+  padding: 0;
+  margin: 0;
+  color: #55534C;
+  font-family: 'Graphik-Light';
+  line-height: 22px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-size: 1.1rem; }
+
+#OT_defList dd {
+  position: static !important; }
+
+#OT_searchWrapperAll input[type="text"], #OT_searchWrapperAll select, #OT_searchWrapperAll option {
+  width: 250px !important;
+  box-sizing: border-box !important;
+  margin: 0 0 12px !important;
+  line-height: 2;
+  height: 40px;
+  background: #C7AD73;
+  padding: 7px;
+  border: 1px solid #A69267;
+  border-radius: 0;
+  -webkit-appearance: none;
+  font-family: 'Graphik-Light';
+  letter-spacing: 2px; }
+
+#OT_searchWrapperAll #OT_submitWrap {
+  position: relative !important;
+  display: inline-block;
+  margin: 0;
+  width: 188px;
+  top: 0;
+  left: 0;
+  margin-top: 12px; }
+
+.btn--new-submit {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1;
+  display: block;
+  text-transform: uppercase;
+  word-spacing: .3em;
+  padding: .5em 1.2em .3em;
+  background-color: #C7AD73;
+  color: #55534C;
+  border-radius: 0;
+  border: 1px solid #A69267;
+  transition: .25s ease-out; }
+
+.btn--new-submit:hover {
+  color: #fff; }
+
+/* Pop Up Window rendering below in the viewport -- Fix --
+   ========================================================================== */
+#TB_window {
+  top: 4% !important; }
+
+/* Hide New iframe from openTable breaking layout
+   ========================================================================== */
+#cal1Shim {
+  display: none !important; }
+
+/* ==========================================================================
+   404 Page
+   ========================================================================== */
+.not-found {
+  margin-top: 5em;
+  padding: 1em;
+  color: #B0AEAE; }
+
+.not-found__title {
+  font-size: 110px;
+  font-size: 11rem;
+  line-height: 1.5; }
+
+/* ==========================================================================
+   Home Pop Up
+   ========================================================================== */
+.popUpModal {
+  opacity: 1;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  background-color: #231F20;
+  background-color: rgba(35, 31, 32, 0.8);
+  transition: .5s; }
+
+.popUpModalContainer-outer {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000 !important;
+  overflow-y: auto;
+  position: fixed; }
+
+.popUpModalContainer {
+  width: 100%;
+  position: relative;
+  outline: 0 !important;
+  background-color: #fff;
+  color: #55534C;
+  padding: 2em;
+  max-width: 700px;
+  margin: 6em auto; }
+
+.popUpModal__close {
+  cursor: pointer;
+  background-color: #E8E8E8;
+  padding-left: .1em;
+  border: 0;
+  -webkit-appearance: none;
+  display: block;
+  outline: 0;
+  padding: 0;
+  padding-top: .1em;
+  padding-left: .1em;
+  box-shadow: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 20px; }
+
+.popUpHiddenOverflow {
+  overflow: hidden; }
+
+/* TODO Arrange Helper (probably better place will be helpers.scss file)
+   ========================================================================== */
+.arrange {
+  display: table; }
+
+.arrange-cell {
+  display: table-cell;
+  vertical-align: top; }
+
+/* Image Cell
+   ========================================================================== */
+.popUpModal__img-cell {
+  width: 40%; }
+
+@media screen and (max-width: 40.625em) {
+  .popUpModal__img-cell {
+    display: none; } }
+
+/* Copy Cell
+   ========================================================================== */
+.popUpModal__copy-cell-inner {
+  padding-left: 2em; }
+
+@media screen and (max-width: 40.625em) {
+  .popUpModal__copy-cell-inner {
+    padding-left: 0; } }
+
+.popUpModal__title {
+  font-family: 'Graphik-Light';
+  line-height: 22px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  margin-bottom: 1em;
+  padding-right: 2em;
+  font-size: 16px;
+  font-size: 1.6rem; }
+
+.popUpModal__link {
+  text-decoration: underline;
+  font-family: 'Graphik-Medium', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400; }
+
+.pop-up-contact-tel {
+  display: none; }
+
+@media screen and (min-width: 68.75em) {
+  .pop-up-contact-tel {
+    display: inline-block; } }
